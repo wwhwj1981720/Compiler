@@ -1,0 +1,2 @@
+	while(k>b)
+	if(m>n) c=b

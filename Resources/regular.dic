@@ -1,0 +1,6 @@
+S->A|C|F
+A->id=id
+C->if(E)S
+F->while(E)S
+E->id<id|id==id|id>id
+
