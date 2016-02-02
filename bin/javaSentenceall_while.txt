@@ -1,0 +1,25 @@
+public class type{
+private void test(String s,int m){	
+
+while(k>b)
+	
+}
+int kk;
+protected void insert(){	
+while(k>b)
+	{if(m>n) c=d;}
+}
+String mm;
+public void test(Long l){	
+mm=8*(9+8);
+int cc;
+int cc;
+while(k>b)
+	{if(m>n) c=d;
+	 k=9*8;
+	}
+}
+
+
+int kk;
+}

@@ -21,7 +21,7 @@ import unicom.WordUnit;
  *   F->while(E)S
  *   E->id<id|id==id|id>id
  *   
- *   S语句
+ *   S语句开始
  *   A赋值
  *   C条件
  *   F循环
@@ -38,6 +38,17 @@ import unicom.WordUnit;
  *  
  *  stack 是词法分析栈
  *  strque 是输入串存贮的栈
+ *  		0	1	2	3	4	5
+		id	if	while	<	==	>
+0	S	A	C	F			
+1	A	Id=id					
+2	C		if(E)s				
+3	F			while(E)S			
+4	E	idU					
+5	U				<id	==id	>id
+
+LLWordListFunction 与 LLFunction方法对应 可以实现 test.txt 使用词法分析器 javalex 处理之后 ，直接调用  LLWordListFunction
+
  */
 public class LLWordListFunction {
 	Map<String,Integer> vn=new HashMap<String,Integer>();

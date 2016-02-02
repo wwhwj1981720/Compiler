@@ -1,0 +1,14 @@
+public class type{
+String m
+public void insert(void){	
+while(k>b)
+	if(m>n) c=d
+}
+
+public void test(void){	
+while(k>b)
+	if(m>n) c=d
+}
+
+
+}

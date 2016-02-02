@@ -8,7 +8,7 @@ import unicom.CFile;
 import unicom.WordUnit;
 
 public class LLNatureFuntionTranslate extends LLNatureFuntion {
-	CFile cf=new CFile("d:\\mid.txt");
+	CFile cf=new CFile("d:\\mid.txt");//结果输出文件
 	public boolean analyasis(List<WordUnit> in)
 	{
 
@@ -31,7 +31,7 @@ public class LLNatureFuntionTranslate extends LLNatureFuntion {
 					if(regular!=null)
 					{
 						stack.pop();
-						putStackReverse(regular,ch);
+						putStackReverse(regular,nowc);
 												
 					}
 				}
@@ -70,7 +70,7 @@ public class LLNatureFuntionTranslate extends LLNatureFuntion {
 		return result;
 	
 	}
-	public void putStackReverse(Stack<String> regular,WordUnit ch)
+	public void putStackReverse(Stack<String> regular,String nowc)
 	{
 		int len=regular.size();
 		StringBuffer regularstr = new StringBuffer();
@@ -84,7 +84,7 @@ public class LLNatureFuntionTranslate extends LLNatureFuntion {
 			regularstr.insert(0, str);
 		}
 		//regularstr.reverse();
-		System.out.println(ch.getNature()+"->"+regularstr.toString());
+		System.out.println(nowc+"->"+regularstr.toString());
 		grammarTranslate();
 	}
 

@@ -12,6 +12,7 @@ import java.util.Stack;
 import java.util.Vector;
 
 /**
+ * LLListFunction List<String> inputlist=new ArrayList<String>()；从List中读取
  * @author Administrator
  *   S->A|C|F
  *   A->id=id
@@ -139,6 +140,11 @@ public class LLFunction {
 		
 		
 	}
+	/**
+	 * 
+	 * 将要分析的字符串以List的方式传人分析
+	 * 
+	 * ***/
 	public boolean analyasis(List<String> in)
 	{
 		boolean result=false;

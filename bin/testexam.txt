@@ -1,0 +1,8 @@
+public class type{
+int p,q
+int k
+public void insert(void){	
+while(k>b)
+	if(m>n) c=d
+}
+}

@@ -28,6 +28,10 @@ public class ll {
 	Stack<Character>   stack=new Stack<Character>();
 	Queue<Character> strque=new LinkedList<Character>(); 
 	//String  in;
+	/**
+	 * 
+	 * 初始化 ll(1) 分析表 
+	 * */
 	public void init()
 	{
 		vn.add('A');

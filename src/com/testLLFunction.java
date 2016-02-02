@@ -7,6 +7,7 @@ public class testLLFunction {
 
 	/**
 	 * @param args
+	 * 使用 LLFunction分析 一个 词法输出的结果
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

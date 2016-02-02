@@ -665,11 +665,18 @@ public class JavaAnayase implements LexInterface {
 	public int getValideline() {
 		// TODO Auto-generated method stub
 		return this.valideline;
-	}boolean isLetter(char c){
+	}
+	boolean isLetter(char c){
         if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || c == '_')
             return true;
     return false;
 }
+	//
+	boolean isFunction(char c)
+	{
+		//if(c=="(")是否是函数
+		return true;
+	}
 boolean isBool(char c)
 {
 	if(c=='('||c==')') return true;
@@ -684,9 +691,13 @@ boolean isDigit(char c){
     if(c >= '0' && c <= '9') return true;
     return false;
 }
-    boolean isKey(String str){
+boolean isKey(String str){
         if(KeyValue.key.contains(str)) return true;
         return false;
+}
+boolean isType(String str){
+    if(KeyValue.typeset.contains(str)) return true;
+    return false;
 }
 boolean isFunctionKey(String str){
     if(KeyValue.refunTypeKey.contains(str)) return true;

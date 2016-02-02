@@ -412,18 +412,37 @@ public class JavaAnayaseExtend extends JavaAnayase {
 					{
 						end = i;
 						String id = content.substring(begin, end);
-						if (isKey(id)) 
+						if (isKey(id)) //是关键字
 						{
 							
 							WordUnit word=new WordUnit();
 							word.setValue(id);
 							word.setID(7);
-							word.setRow(line);
-							word.setNature(id);
+							word.setRow(line);//所在行号 
+							word.setNature(id);//关键字按照原样返回
 							wordlist.add(word);
 							
 						}
-						else
+						else if (isType(id)) //是java 类型 
+						{
+							
+							WordUnit word=new WordUnit();
+							word.setValue(id);
+							word.setID(8);
+							word.setRow(line);//所在行号 
+							word.setNature("type");//关键字按照原样返回
+							wordlist.add(word);
+							
+						}
+//						else if(c=='(')
+//						{
+//							WordUnit word=new WordUnit();
+//							word.setValue(id );
+//							word.setRow(line);
+//							word.setNature("Function");
+//							wordlist.add(word);
+//						}
+						else //变量 
 						{
 								WordUnit word=new WordUnit();
 								word.setValue(id );
@@ -454,7 +473,7 @@ public class JavaAnayaseExtend extends JavaAnayase {
 							word.setValue(id);
 							word.setID(7);
 							word.setRow(line);
-							word.setNature("id");
+							word.setNature("num");//id是字符串变量  num 是数字 
 							wordlist.add(word);
 							
 						

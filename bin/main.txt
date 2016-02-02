@@ -1,0 +1,10 @@
+public class type{
+public void main(String arg[]){	
+int mm;
+mm=8+8;
+if(c>b) mm=u+m;
+while(a==b) mm=m+n;
+
+
+}
+}
